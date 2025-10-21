@@ -66,16 +66,20 @@
 /* === Profilfoto unter dem Banner === */
 .profile-photo {
   text-align: center;
-  margin-top: -50px; /* leicht über den Bannerbereich hinein */
+  margin-top: -40px; /* leicht ins Banner hinein */
 }
 
 .profile-photo img {
-  width: 150px;
-  height: 150px;
+  width: 200px; /* größer */
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #222;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  position: relative;
+  top: 20px; /* etwas nach unten, verhindert Abschneiden */
+}
+
 }
 
   </style>
