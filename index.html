@@ -32,7 +32,16 @@
 }
 
     header{display:flex;gap:16px;align-items:center}
-    .logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),transparent);display:flex;align-items:center;justify-content:center;font-weight:800;color:#081a2b;box-shadow:0 8px 30px var(--ring)}
+    .logo{
+  width:100px;
+  height:100px;
+  border-radius:50%; /* macht es rund */
+  background-image:url('melodorian-logo.png');
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 0 20px rgba(154,166,255,0.35); /* sanfter Glow */
+}
+
     h1{margin:0;font-size:1.8rem;letter-spacing:.2px}
     p.lead{margin:.25rem 0 0;color:var(--muted)}
     .panel{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px;box-shadow:0 6px 24px rgba(2,6,23,.45)}
