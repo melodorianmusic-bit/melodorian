@@ -187,6 +187,39 @@ box-shadow:
   object-fit: contain;
   display: block;
 }
+/* Notbremse: Social-Buttons feste Größe – überschreibt alles andere */
+nav.icon-grid { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 16px; 
+  align-items: center; 
+  justify-content: flex-start;
+}
+
+nav.icon-grid .icon-btn {
+  flex: 0 0 auto !important;
+  width: 56px !important;
+  height: 56px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+nav.icon-grid .icon-btn img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+@media (max-width: 600px) {
+  nav.icon-grid .icon-btn {
+    width: 48px !important;
+    height: 48px !important;
+  }
+}
 
   </style>
 </head>
