@@ -242,6 +242,26 @@ nav.icon-grid .icon-btn img {
     height: 48px !important;
   }
 }
+/* Per-Icon Feintuning ---------------------------------- */
+
+/* TikTok: noch etwas größer ziehen (SVG hat viel Innenrand) */
+.icon--fix-tt {
+  transform: scale(1.45);
+  transform-origin: center center;
+}
+
+/* YouTube: Wortmarke links/rechts wegschneiden & etwas vergrößern */
+.icon--fix-yt {
+  transform: scale(1.35);
+  transform-origin: center center;
+  /* schneidet die Seiten der breiten Wortmarke ab */
+  clip-path: inset(0 36% 0 36%);
+}
+
+@media (max-width: 600px) {
+  .icon--fix-tt { transform: scale(1.34); }
+  .icon--fix-yt { transform: scale(1.26); clip-path: inset(0 34% 0 34%); }
+}
 
   </style>
 </head>
