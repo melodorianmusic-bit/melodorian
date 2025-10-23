@@ -181,11 +181,24 @@ box-shadow:
 
 }
 /* Einheitliche Größe für alle Social-Media-Icons */
+/* Einheitliche Größe für alle Social-Media-Icons */
 .social-icon {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Fix: SVG-Dateien (z. B. TikTok, YouTube) richtig skalieren */
+.social-icon svg,
+.social-icon img {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 }
 /* Notbremse: Social-Buttons feste Größe – überschreibt alles andere */
 nav.icon-grid { 
