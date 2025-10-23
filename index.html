@@ -125,6 +125,15 @@ img.logo{
 }
 
 }
+/* Feintuning: manche SVGs haben viel Innen-Rand -> leicht größer skalieren */
+.icon--boost {
+  transform: scale(1.22);
+  transform-origin: center center;
+}
+
+@media (max-width: 600px) {
+  .icon--boost { transform: scale(1.16); }
+}
 
     /* ====== EDITIER-HINWEISE ======
        - Ersetze die LINKS unten im <nav> Block (href="...")
