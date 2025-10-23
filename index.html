@@ -209,39 +209,52 @@ box-shadow:
 }
 
 }
-/* Notbremse: Social-Buttons feste Größe – überschreibt alles andere */
-nav.icon-grid { 
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 16px; 
-  align-items: center; 
-  justify-content: flex-start;
+/* === Social Icon Leiste (Simple Icons SVG, einheitlich) === */
+
+.icon-grid{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:16px;
 }
 
-nav.icon-grid .icon-btn {
-  flex: 0 0 auto !important;
-  width: 56px !important;
-  height: 56px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
+.icon-btn{
+  width:56px;
+  height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 0 12px rgba(154,166,255,.15);
+  transition: transform .2s, box-shadow .2s, background .2s, border-color .2s;
 }
 
-nav.icon-grid .icon-btn img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  display: block !important;
+.social-icon{
+  width:40px;
+  height:40px;
+  filter: invert(1);
+  opacity:.95;
+  transition: transform .2s, opacity .2s, filter .2s;
 }
 
-@media (max-width: 600px) {
-  nav.icon-grid .icon-btn {
-    width: 48px !important;
-    height: 48px !important;
-  }
+.icon-btn:hover{
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 22px rgba(154,166,255,.25);
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.03);
 }
+.icon-btn:hover .social-icon{
+  opacity:1;
+  filter: invert(1) drop-shadow(0 0 6px rgba(154,166,255,.35));
+}
+
+@media (max-width: 600px){
+  .icon-btn{ width:48px; height:48px; }
+  .social-icon{ width:32px; height:32px; }
+}
+
 /* Per-Icon Feintuning ---------------------------------- */
 
 /* TikTok: noch etwas größer ziehen (SVG hat viel Innenrand) */
