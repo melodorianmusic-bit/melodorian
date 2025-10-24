@@ -333,9 +333,13 @@ box-shadow:
     <p style="margin-top:14px;"><strong>Thank you for being here.</strong><br>
     I hope you’ll enjoy listening — and maybe a piece will touch you the way it did when I composed it. 🎹</p>
 
-    <p style="margin-top:10px;font-size:14px;color:#9fb0d8;">
-      Read more about me → <a href="bio.html" style="color:#b6c8ff;text-decoration:underline;">Bio (DE / EN / HR)</a>
-    </p>
+    <div style="text-align:center; margin-top:30px;">
+  <a href="bio.html" 
+     style="display:inline-block;padding:12px 26px;background:rgba(207,216,240,0.1);border:1px solid rgba(207,216,240,0.3);border-radius:12px;color:#cfd8f0;font-size:15px;text-decoration:none;transition:all 0.25s ease;">
+    Read more about me → <strong>Bio (DE / EN / HR)</strong>
+  </a>
+</div>
+
   </div>
 
   <!-- DEUTSCH -->
@@ -355,6 +359,13 @@ box-shadow:
     <p style="margin-top:10px;font-size:14px;color:#9fb0d8;">
       Mehr über mich → <a href="bio.html" style="color:#b6c8ff;text-decoration:underline;">Bio (DE / EN / HR)</a>
     </p>
+    <div style="text-align:center; margin-top:30px;">
+  <a href="bio.html" 
+     style="display:inline-block;padding:12px 26px;background:rgba(207,216,240,0.1);border:1px solid rgba(207,216,240,0.3);border-radius:12px;color:#cfd8f0;font-size:15px;text-decoration:none;transition:all 0.25s ease;">
+    Mehr über mich → <strong>Bio (DE / EN / HR)</strong>
+  </a>
+</div>
+
   </div>
 
   <!-- HRVATSKI -->
@@ -374,6 +385,13 @@ box-shadow:
     <p style="margin-top:10px;font-size:14px;color:#9fb0d8;">
       Više o meni → <a href="bio.html" style="color:#b6c8ff;text-decoration:underline;">Bio (DE / EN / HR)</a>
     </p>
+    <div style="text-align:center; margin-top:30px;">
+  <a href="bio.html" 
+     style="display:inline-block;padding:12px 26px;background:rgba(207,216,240,0.1);border:1px solid rgba(207,216,240,0.3);border-radius:12px;color:#cfd8f0;font-size:15px;text-decoration:none;transition:all 0.25s ease;">
+    Više o meni → <strong>Bio (DE / EN / HR)</strong>
+  </a>
+</div>
+
   </div>
 </section>
 
@@ -469,5 +487,15 @@ setLang('en'); // EN as default
   <script>
     document.getElementById("yr").textContent = new Date().getFullYear();
   </script>
+  <style>
+  a[href="bio.html"]:hover {
+    background: rgba(207, 216, 240, 0.2);
+    border-color: rgba(207, 216, 240, 0.5);
+    color: #ffffff;
+    transform: scale(1.03);
+    transition: all 0.25s ease;
+  }
+</style>
+
 </body>
 </html>
