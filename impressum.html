@@ -1,11 +1,59 @@
-📄 Impressum
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum | Melodorian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b111d;
+      color: #ddd;
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #cfd8f0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    a {
+      color: #9ecaff;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Impressum</h1>
 
-Angaben gemäß § 5 DDG
-Jadran Salaovic
-c/o Impressumservice Dein-Impressum
-Steffiner Straße 41
-35410 Hungen
-Deutschland
+  <p><strong>Angaben gemäß § 5 DDG</strong></p>
+  <p>
+    Jadran Salaovic<br>
+    c/o Impressumservice Dein-Impressum<br>
+    Steffiner Straße 41<br>
+    35410 Hungen<br>
+    Deutschland
+  </p>
 
-Kontakt
-E-Mail: melodorian.music@gmail.com
+  <p><strong>Kontakt</strong><br>
+  E-Mail: <a href="mailto:melodorian.music@gmail.com">melodorian.music@gmail.com</a></p>
+
+  <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br>
+  Jadran Salaovic</p>
+
+  <footer>
+    © <span id="yr"></span> Melodorian
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
