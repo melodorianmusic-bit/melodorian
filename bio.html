@@ -6,130 +6,88 @@
   <title>Melodorian – Bio / About / O meni</title>
 
   <meta name="description" content="Melodorian – melancholic instrumental music blending neoclassical, ambient and cinematic piano sound. Discover Jadran Salaovic, composer from Croatia living in Germany." />
-  <meta name="keywords" content="Melodorian, Jadran Salaovic, neoclassical piano, ambient music, melancholic, cinematic piano, composer, Croatia, Germany, emotional music, relaxing piano, Soundtrack style" />
-
+  <meta name="keywords" content="Melodorian, Jadran Salaovic, melancholic piano, neoclassical, ambient, cinematic piano, composer, Croatia, Germany, emotional music, relaxing piano" />
   <meta name="color-scheme" content="dark light">
+
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background-color: #0e0e12;
-      color: #ddd;
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#0e0e12; --text:#ddd; --muted:#9fb0d8; --accent:#cfd8f0;
     }
-    main {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 20px;
+    body{font-family:system-ui, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;margin:0}
+    main{max-width:800px;margin:60px auto;padding:20px}
+    h1{color:var(--accent);margin:0 0 14px 0;font-size:30px;line-height:1.25}
+    p{margin:0 0 14px 0}
+    a{color:var(--muted);text-decoration:underline}
+    .lang{ text-align:right; margin-bottom:10px }
+    .lang button{ background:none;border:none;color:var(--muted);cursor:pointer;font-size:15px }
+    .back{ text-align:center; margin-top:34px }
+    .btn{
+      display:inline-block;padding:12px 26px;border:1px solid rgba(207,216,240,.3);
+      border-radius:12px;background:rgba(207,216,240,.08);color:var(--accent);
+      text-decoration:none;transition:all .25s ease
     }
-    h1 {
-      color: #cfd8f0;
-      text-align: left;
-      margin-bottom: 16px;
-    }
-    p {
-      margin-bottom: 14px;
-    }
-    .lang-buttons {
-      text-align: right;
-      margin-bottom: 10px;
-    }
-    .lang-buttons button {
-      background: none;
-      border: none;
-      color: #9fb0d8;
-      cursor: pointer;
-      font-size: 15px;
-    }
-    a {
-      color: #9fb0d8;
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
+    .btn:hover{ background:rgba(207,216,240,.22); transform:scale(1.03) }
   </style>
 </head>
 
 <body>
   <main>
-    <div class="lang-buttons">
+    <div class="lang">
       <button onclick="setLang('en')">🇬🇧 EN</button> |
       <button onclick="setLang('de')">🇩🇪 DE</button> |
       <button onclick="setLang('hr')">🇭🇷 HR</button>
     </div>
 
-    <!-- ENGLISH -->
+    <!-- EN -->
     <div id="lang-en">
       <h1>About Melodorian</h1>
       <p>My name is <strong>Jadran Salaovic</strong>, also known as <strong>Melodorian</strong>. I’m a 53-year-old composer from Croatia, living in Germany since 1992. My music blends <em>neoclassical, ambient</em> and cinematic elements – emotional, nostalgic and reflective.</p>
-
-      <p>I started playing piano rather late, in my forties, after years of playing guitar. What began as curiosity slowly turned into a passion. I discovered that the piano’s sound – especially through instruments like <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> and <strong>Spitfire Felt Piano</strong> – could capture emotion in a way that words never could.</p>
-
-      <p>Over time, I began composing my own instrumentals using only virtual instruments. I don’t perform live – I build and shape my music in the studio, note by note, with patience and feeling. My tracks are written for streaming, not stages.</p>
-
-      <p>I’m inspired by artists such as <strong>Ólafur Arnalds</strong>, <strong>Max Richter</strong> and <strong>Nils Frahm</strong> – and by nature, rain, stillness and memory. I try to express how beauty and melancholy can coexist in sound.</p>
-
-      <p>My music combines <strong>piano, cello, soft guitars, pads</strong> and <strong>field sounds</strong> like rain, water or birds. It’s music for reflection, calm and quiet inspiration.</p>
-
-      <p><strong>“I don’t really play my songs – I build them.”</strong> That’s how I like to describe my process: improvising, editing and layering emotions until a story emerges.</p>
-
-      <p>If you’d like to follow my musical journey, you’ll find my work on <strong>Spotify, YouTube, Apple Music</strong> and <strong>SoundCloud</strong>. Thank you for listening. 🌙</p>
+      <p>I started piano late, in my forties, after years of guitar. The piano’s sound – especially with <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> and <strong>Spitfire Felt Piano</strong> – helped me capture feelings words can’t.</p>
+      <p>I compose with virtual instruments only. I don’t perform live – I <em>build</em> my tracks in the studio, note by note. My music is made for streaming, not stages.</p>
+      <p>Influences: <strong>Ólafur Arnalds</strong>, <strong>Max Richter</strong>, <strong>Nils Frahm</strong>; plus rain, nature, stillness and memory.</p>
+      <p>Piano, cello, soft guitars and warm pads meet field sounds like rain or birds – music for calm and quiet focus.</p>
+      <p><strong>“I don’t really play my pieces – I build them.”</strong> Improvising, editing and layering until a small story appears.</p>
+      <p>Find me on <strong>Spotify</strong>, <strong>YouTube</strong>, <strong>Apple Music</strong> and <strong>SoundCloud</strong>. Thank you for listening. 🌙</p>
     </div>
 
-    <!-- DEUTSCH -->
+    <!-- DE -->
     <div id="lang-de" style="display:none;">
       <h1>Über Melodorian</h1>
-      <p>Ich heiße <strong>Jadran Salaovic</strong> – als Musiker bekannt unter dem Namen <strong>Melodorian</strong>. Ich bin 53 Jahre alt, stamme aus Kroatien und lebe seit 1992 in Deutschland. Meine Musik bewegt sich zwischen <em>Neoklassik, Ambient</em> und cinematischem Piano – emotional, nostalgisch und introspektiv.</p>
-
-      <p>Mit dem Klavierspielen habe ich spät begonnen, erst mit etwa vierzig, nachdem ich zuvor viele Jahre Gitarre gespielt hatte. Aus Neugier wurde Leidenschaft. Ich entdeckte, dass der Klang eines Pianos – besonders aus Libraries wie <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> oder dem <strong>Spitfire Felt Piano</strong> – Emotionen ausdrücken kann, die Worte oft nicht schaffen.</p>
-
-      <p>Mit der Zeit begann ich, meine eigenen Instrumentalstücke zu komponieren – ausschließlich mit virtuellen Instrumenten. Ich trete nicht live auf, sondern „baue“ meine Musik im Studio Stück für Stück, mit Geduld und Gefühl. Meine Songs sind für Streaming gemacht, nicht für Bühnen.</p>
-
-      <p>Inspiration finde ich bei Künstlern wie <strong>Ólafur Arnalds</strong>, <strong>Max Richter</strong> und <strong>Nils Frahm</strong>, aber auch in der Natur, im Regen, in Stille und Erinnerung. Ich versuche, zu zeigen, wie Melancholie und Schönheit nebeneinander existieren können.</p>
-
-      <p>Meine Musik vereint <strong>Piano, Cello, sanfte Gitarren, Pads</strong> und <strong>natürliche Geräusche</strong> wie Regen, Wasser oder Vogelgezwitscher. Sie lädt zum Innehalten, Träumen und Loslassen ein.</p>
-
-      <p><strong>„Ich spiele meine Stücke nicht – ich baue sie.“</strong> So beschreibe ich gern meinen Prozess: improvisieren, bearbeiten, Schichten aufbauen, bis eine kleine Geschichte entsteht.</p>
-
-      <p>Wenn du meine musikalische Reise begleiten möchtest, findest du meine Stücke auf <strong>Spotify, YouTube, Apple Music</strong> und <strong>SoundCloud</strong>. Danke fürs Zuhören. 🌙</p>
+      <p>Ich heiße <strong>Jadran Salaovic</strong> – als Musiker <strong>Melodorian</strong>. 53 Jahre alt, aus Kroatien, seit 1992 in Deutschland. Meine Musik bewegt sich zwischen <em>Neoklassik, Ambient</em> und cinematischem Piano – emotional, nostalgisch, introspektiv.</p>
+      <p>Mit dem Klavier habe ich spät begonnen, nach vielen Jahren Gitarre. Bibliotheken wie <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> und <strong>Spitfire Felt Piano</strong> halfen mir, Gefühle zu formen, für die Worte zu grob sind.</p>
+      <p>Ich arbeite ausschließlich mit virtuellen Instrumenten. Live trete ich nicht auf – ich <em>baue</em> meine Stücke Stück für Stück im Studio. Meine Musik ist für Streaming gedacht.</p>
+      <p>Einflüsse: <strong>Ólafur Arnalds</strong>, <strong>Max Richter</strong>, <strong>Nils Frahm</strong>; außerdem Natur, Regen, Stille und Erinnerungen.</p>
+      <p>Piano, Cello, sanfte Gitarren und Pads, dazu Naturklänge wie Regen oder Vögel – Musik zum Innehalten.</p>
+      <p><strong>„Ich spiele meine Stücke nicht – ich baue sie.“</strong> Improvisieren, bearbeiten, Schichten aufbauen – bis eine kleine Geschichte entsteht.</p>
+      <p>Meine Releases gibt es auf <strong>Spotify</strong>, <strong>YouTube</strong>, <strong>Apple Music</strong> und <strong>SoundCloud</strong>. Danke fürs Zuhören. 🌙</p>
     </div>
 
-    <!-- HRVATSKI -->
+    <!-- HR -->
     <div id="lang-hr" style="display:none;">
       <h1>O Melodorianu</h1>
-      <p>Zovem se <strong>Jadran Salaovic</strong>, poznat kao <strong>Melodorian</strong>. Imam 53 godine, rođen sam u Hrvatskoj, a od 1992. živim u Njemačkoj. Moja glazba spaja <em>neoklasične</em>, <em>ambijentalne</em> i filmske elemente – emotivna je, nostalgična i introspektivna.</p>
-
-      <p>Klavir sam počeo svirati prilično kasno, tek u četrdesetima, nakon godina sviranja gitare. Iz znatiželje je nastala strast. Otkrio sam da zvuk klavira – posebno u bibliotekama poput <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> i <strong>Spitfire Felt Piano</strong> – može izraziti osjećaje koje riječi ne mogu.</p>
-
-      <p>S vremenom sam počeo skladati vlastite instrumentalne kompozicije koristeći samo virtualne instrumente. Ne nastupam uživo – svoju glazbu „gradim“ u studiju, sloj po sloj, s puno strpljenja i osjećaja. Moje skladbe su stvorene za streaming, a ne za pozornice.</p>
-
-      <p>Inspiriraju me umjetnici poput <strong>Ólafura Arnaldsa</strong>, <strong>Maxa Richtera</strong> i <strong>Nilsa Frama</strong>, kao i priroda, kiša, tišina i sjećanja. Pokušavam pokazati kako se tuga i ljepota mogu ispreplesti u zvuku.</p>
-
-      <p>Moja glazba kombinira <strong>klavir, violončelo, nježne gitare, padove</strong> i <strong>zvukove prirode</strong> poput kiše, vode ili ptica. To je glazba za mir, razmišljanje i maštanje.</p>
-
-      <p><strong>„Ne sviram svoje skladbe – ja ih gradim.“</strong> Tako opisujem svoj proces: improviziram, uređujem i slažem osjećaje dok se ne rodi priča.</p>
-
-      <p>Ako želiš pratiti moje glazbeno putovanje, pronaći ćeš me na <strong>Spotifyju, YouTubeu, Apple Musicu</strong> i <strong>SoundCloudu</strong>. Hvala ti na slušanju. 🌙</p>
+      <p>Zovem se <strong>Jadran Salaovic</strong>, poznat kao <strong>Melodorian</strong>. Imam 53 godine; rođen u Hrvatskoj, živim u Njemačkoj od 1992. Glazba mi spaja <em>neoklasične</em>, <em>ambijentalne</em> i filmske elemente – emotivna i nostalgična.</p>
+      <p>Klavir sam počeo kasno, nakon godina gitare. Biblioteke poput <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> i <strong>Spitfire Felt Piano</strong> pomogle su mi uhvatiti osjećaje koje riječi ne mogu.</p>
+      <p>Skladam samo s virtualnim instrumentima. Ne nastupam uživo – skladbe <em>gradim</em> u studiju, sloj po sloj. Moja je glazba stvorena za streaming.</p>
+      <p>Utjecaji: <strong>Ólafur Arnalds</strong>, <strong>Max Richter</strong>, <strong>Nils Frahm</strong>; priroda, kiša, tišina i sjećanja.</p>
+      <p>Klavir, violončelo, nježne gitare i padovi, te zvukovi prirode – glazba za mir i koncentraciju.</p>
+      <p><strong>„Ne sviram svoje skladbe – ja ih gradim.“</strong> Improviziram, uređujem i slažem slojeve dok se ne rodi priča.</p>
+      <p>Moje izdanja su na <strong>Spotifyju</strong>, <strong>YouTubeu</strong>, <strong>Apple Musicu</strong> i <strong>SoundCloudu</strong>. Hvala na slušanju. 🌙</p>
     </div>
 
-    <footer>
-      <a href="index.html">← Back to Home</a>
-    </footer>
+    <div class="back">
+      <a class="btn" href="index.html">← Back to Home</a>
+    </div>
   </main>
 
   <script>
-    function setLang(lang) {
-      ['en', 'de', 'hr'].forEach(code => {
-        const el = document.getElementById('lang-' + code);
-        if (el) el.style.display = (code === lang) ? 'block' : 'none';
+    function setLang(lang){
+      ['en','de','hr'].forEach(c=>{
+        const el=document.getElementById('lang-'+c);
+        if(el) el.style.display = (c===lang)?'block':'none';
       });
     }
-    setLang('en'); // default language
+    setLang('en');
   </script>
 </body>
 </html>
+
