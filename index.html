@@ -312,21 +312,80 @@ box-shadow:
 
 
     <section class="hero" aria-label="Melodorian Banner"></section>
-    <section style="max-width:800px;margin:60px auto 40px auto;line-height:1.7;color:#ddd;">
-  <h1 style="color:#cfd8f0;margin-bottom:18px;">Hi, schön, dass du da bist.</h1>
-  <p>Ich freue mich, dass du hierher gefunden hast.<br>
-  Vielleicht suchst du gerade nach <strong>melancholischer, beruhigender Musik</strong> – etwas, das dich entschleunigt, träumen oder einfach durchatmen lässt.<br>
-  Dann bleib gern einen Moment. 🌙</p>
+    <section style="max-width:760px;margin:48px auto;line-height:1.6;color:#ddd;font-size:16px;">
+  <div style="text-align:right;margin-bottom:10px;">
+    <button onclick="setLang('en')" style="background:none;border:none;color:#9fb0d8;cursor:pointer;">🇬🇧 EN</button> |
+    <button onclick="setLang('de')" style="background:none;border:none;color:#9fb0d8;cursor:pointer;">🇩🇪 DE</button> |
+    <button onclick="setLang('hr')" style="background:none;border:none;color:#9fb0d8;cursor:pointer;">🇭🇷 HR</button>
+  </div>
 
-  <p style="margin-top:18px;">Ich bin <strong>Jadran, alias Melodorian</strong> – ein Komponist, der instrumentale Musik zwischen <em>Neoklassik, Ambient</em> und emotionalem Piano erschafft. Meine Stücke erzählen kleine, stille Geschichten – mit Piano, Cello, sanften Gitarren und warmen Pads.</p>
+  <!-- ENGLISH (default) -->
+  <div id="lang-en">
+    <h1 style="color:#cfd8f0;margin:0 0 12px;font-size:30px;line-height:1.25;">Hi, glad you’re here.</h1>
+    <p>I’m happy you found your way here. Maybe you’re looking for <strong>melancholic, calming music</strong> — something that lets you slow down, dream a little, or simply breathe. If so, stay for a moment. 🌙</p>
 
-  <p><strong>Ich stehe am Anfang meiner musikalischen Reise.</strong> Diese Webseite wächst mit der Zeit – wie auch meine Musik. Mein erster Instrumentaltrack wurde am <strong>24. Oktober 2025</strong> veröffentlicht. Noch braucht alles etwas Anlauf, Aufbau, Hörer – aber jeder Klick, jedes Like und jeder Kommentar bedeutet mir viel.</p>
+    <p style="margin-top:14px;">I’m <strong>Jadran, a.k.a. Melodorian</strong> — a composer creating instrumental music between <em>neoclassical, ambient</em> and emotional piano. Small, quiet stories with piano, cello, soft guitars and warm pads.</p>
 
-  <p>Du findest meine Musik auf <strong>Spotify, YouTube, Apple Music, SoundCloud</strong> und anderen Streaming-Plattformen. Ich freue mich über Feedback, Likes und das Teilen meiner Songs – so erreicht die Musik neue Ohren.</p>
+    <p><strong>I’m at the beginning of my musical journey.</strong> This website will grow over time — just like my music. My first instrumental track was released on <strong>October 24, 2025</strong>. It all needs a little runway and listeners — every play, like and comment means a lot to me.</p>
 
-  <p><strong>Danke, dass du hier bist.</strong><br>
-  Ich wünsche dir viel Freude beim Hören – und vielleicht berührt dich ein Stück so, wie es mich beim Komponieren berührt hat. 🎹</p>
+    <p>You’ll find my music on <strong>Spotify, YouTube, Apple Music</strong> and <strong>SoundCloud</strong>. I appreciate feedback, likes and shares — it helps the music reach new ears.</p>
+
+    <p style="margin-top:14px;"><strong>Thank you for being here.</strong><br>
+    I hope you’ll enjoy listening — and maybe a piece will touch you the way it did when I composed it. 🎹</p>
+
+    <p style="margin-top:10px;font-size:14px;color:#9fb0d8;">
+      Read more about me → <a href="bio.html" style="color:#b6c8ff;text-decoration:underline;">Bio (DE / EN / HR)</a>
+    </p>
+  </div>
+
+  <!-- DEUTSCH -->
+  <div id="lang-de" style="display:none;">
+    <h1 style="color:#cfd8f0;margin:0 0 12px;font-size:30px;line-height:1.25;">Hi, schön, dass du da bist.</h1>
+    <p>Ich freue mich, dass du hierher gefunden hast. Vielleicht suchst du gerade nach <strong>melancholischer, beruhigender Musik</strong> – etwas, das dich entschleunigt, träumen oder einfach durchatmen lässt. Dann bleib gern einen Moment. 🌙</p>
+
+    <p style="margin-top:14px;">Ich bin <strong>Jadran, alias Melodorian</strong> – ein Komponist, der instrumentale Musik zwischen <em>Neoklassik, Ambient</em> und emotionalem Piano erschafft. Kleine, stille Geschichten mit Piano, Cello, sanften Gitarren und warmen Pads.</p>
+
+    <p><strong>Ich stehe am Anfang meiner musikalischen Reise.</strong> Diese Webseite wächst mit der Zeit – so wie meine Musik. Mein erster Instrumentaltrack wurde am <strong>24. Oktober 2025</strong> veröffentlicht. Es braucht Anlauf und Hörer – jeder Klick, jedes Like und jeder Kommentar bedeutet mir viel.</p>
+
+    <p>Du findest meine Musik auf <strong>Spotify, YouTube, Apple Music</strong> und <strong>SoundCloud</strong>. Ich freue mich über Feedback, Likes und das Teilen – so erreicht die Musik neue Ohren.</p>
+
+    <p style="margin-top:14px;"><strong>Danke, dass du hier bist.</strong><br>
+    Ich wünsche dir viel Freude beim Hören – und vielleicht berührt dich ein Stück so, wie es mich beim Komponieren berührt hat. 🎹</p>
+
+    <p style="margin-top:10px;font-size:14px;color:#9fb0d8;">
+      Mehr über mich → <a href="bio.html" style="color:#b6c8ff;text-decoration:underline;">Bio (DE / EN / HR)</a>
+    </p>
+  </div>
+
+  <!-- HRVATSKI -->
+  <div id="lang-hr" style="display:none;">
+    <h1 style="color:#cfd8f0;margin:0 0 12px;font-size:30px;line-height:1.25;">Bok, drago mi je da si ovdje.</h1>
+    <p>Drago mi je što si svratio. Možda tražiš <strong>melankoličnu, smirujuću glazbu</strong> — nešto što usporava ritam, budi maštu ili ti jednostavno daje trenutak mira. Onda ostani malo. 🌙</p>
+
+    <p style="margin-top:14px;">Ja sam <strong>Jadran, poznat kao Melodorian</strong> — skladatelj koji stvara instrumentalnu glazbu između <em>neoklasičnog, ambijentalnog</em> i emotivnog klavira. Male, tihe priče s klavirom, violončelom, nježnim gitarama i toplim tonovima.</p>
+
+    <p><strong>Tek sam na početku svog glazbenog puta.</strong> Ova stranica će s vremenom rasti — kao i moja glazba. Moj prvi instrumentalni singl objavljen je <strong>24. listopada 2025.</strong> Treba malo zaleta i slušatelja — svaka reprodukcija, lajk i komentar puno mi znače.</p>
+
+    <p>Moju glazbu možeš pronaći na <strong>Spotifyju, YouTubeu, Apple Musicu</strong> i <strong>SoundCloudu</strong>. Cijenim povratne informacije, lajkove i dijeljenje — tako glazba dolazi do novih ušiju.</p>
+
+    <p style="margin-top:14px;"><strong>Hvala ti što si ovdje.</strong><br>
+    Nadam se da ćeš uživati u slušanju — možda te neka skladba dotakne kao i mene dok sam je stvarao. 🎹</p>
+
+    <p style="margin-top:10px;font-size:14px;color:#9fb0d8;">
+      Više o meni → <a href="bio.html" style="color:#b6c8ff;text-decoration:underline;">Bio (DE / EN / HR)</a>
+    </p>
+  </div>
 </section>
+
+<script>
+function setLang(lang) {
+  ['en','de','hr'].forEach(code => {
+    const el = document.getElementById('lang-' + code);
+    if (el) el.style.display = (code === lang) ? 'block' : 'none';
+  });
+}
+setLang('en'); // EN as default
+</script>
 
 <section class="profile-photo">
   <img src="melodorian-profile.jpg" alt="Melodorian Portrait">
