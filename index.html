@@ -62,10 +62,10 @@ img.logo{
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 18px;
   justify-content: center;
   align-items: center;
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 .icon-btn {
@@ -76,64 +76,67 @@ img.logo{
   justify-content: center;
   align-items: center;
   background: var(--panel);
-  box-shadow: 0 0 12px rgba(154,166,255,.25);
-  transition: all .25s ease;
-  border: 1px solid rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(154, 166, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.25s ease;
 }
 
 .icon-btn:hover {
   background: var(--accent);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 0 20px rgba(154,166,255,.5);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 0 20px rgba(154, 166, 255, 0.45);
 }
 
-.icon-btn svg {
+.icon-btn svg,
+.icon-btn img {
   width: 26px;
   height: 26px;
   fill: var(--fg);
-  transition: fill .3s ease;
+  transition: all 0.3s ease;
 }
 
-.icon-btn:hover svg {
-  fill: white;
+.icon-btn:hover svg,
+.icon-btn:hover img {
+  fill: #fff;
+  filter: drop-shadow(0 0 6px rgba(154, 166, 255, 0.6));
 }
 
+/* deaktivierte Icons (z. B. zukünftige Plattformen) */
 .is-disabled {
-  opacity: .45;
+  opacity: 0.45;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
 }
-
 .is-disabled:hover {
   background: var(--panel);
   transform: none;
 }
 
+/* kleine Bildschirme */
 @media (max-width: 600px) {
   .icon-btn {
     width: 48px;
     height: 48px;
   }
-  .icon-btn svg {
+  .icon-btn svg,
+  .icon-btn img {
     width: 22px;
     height: 22px;
-  }.icon-btn img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+  }
 }
 
-}
-/* Feintuning: manche SVGs haben viel Innen-Rand -> leicht größer skalieren */
-.icon--boost {
+/* Feintuning: manche SVGs mit viel Innenrand leicht skalieren */
+.icon-boost {
   transform: scale(1.22);
   transform-origin: center center;
 }
-
 @media (max-width: 600px) {
-  .icon--boost { transform: scale(1.16); }
+  .icon-boost {
+    transform: scale(1.16);
+  }
 }
+
 
     /* ====== EDITIER-HINWEISE ======
        - Ersetze die LINKS unten im <nav> Block (href="...")
