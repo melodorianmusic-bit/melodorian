@@ -232,34 +232,33 @@ box-shadow:
   justify-content: center;
   align-items: center;
   background: var(--panel);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 10px rgba(154, 166, 255, 0.15);
-  transition: all 0.25s ease;
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 0 10px rgba(154,166,255,.18);
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
 }
 
 .icon-btn:hover {
   background: var(--accent);
   transform: translateY(-3px) scale(1.08);
-  box-shadow: 0 0 20px rgba(154, 166, 255, 0.45);
+  box-shadow: 0 0 24px rgba(154,166,255,.55), 0 0 48px rgba(154,166,255,.28);
 }
 
 .icon-btn img,
 .icon-btn svg {
   width: 26px;
   height: 26px;
-  fill: var(--fg);
-  transition: all 0.3s ease;
+  transition: filter .3s ease, opacity .3s ease;
 }
 
-.icon-btn:hover img,
-.icon-btn:hover svg {
-  fill: #fff;
-  filter: drop-shadow(0 0 6px rgba(154, 166, 255, 0.6));
+.icon-btn:hover img {
+  filter: brightness(0) invert(1);
 }
 
-/* deaktivierte Icons (z. B. zukünftige Plattformen) */
+.icon-btn svg { fill: var(--fg); }
+.icon-btn:hover svg { fill: #fff; }
+
 .is-disabled {
-  opacity: 0.45;
+  opacity: .45;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -270,7 +269,6 @@ box-shadow:
   transform: none;
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .icon-btn {
     width: 48px;
