@@ -214,78 +214,75 @@ box-shadow:
 }
 /* === Social Icon Leiste (Simple Icons SVG, einheitlich) === */
 
-.icon-grid{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:16px;
+/* === Social Icon Leiste (Simple Icons SVG, einheitlich) === */
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
 }
 
-.icon-btn{
-  width:56px;
-  height:56px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%;
+.icon-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--panel);
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: 0 0 12px rgba(154,166,255,.15);
-  transition: transform .2s, box-shadow .2s, background .2s, border-color .2s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(154, 166, 255, 0.15);
+  transition: all 0.25s ease;
 }
 
-.social-icon{
-  width:40px;
-  height:40px;
-  filter: invert(1);
-  opacity:.95;
-  transition: transform .2s, opacity .2s, filter .2s;
+.icon-btn:hover {
+  background: var(--accent);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 0 20px rgba(154, 166, 255, 0.45);
 }
 
-.icon-btn:hover{
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 22px rgba(154,166,255,.25);
-  border-color: rgba(255,255,255,.18);
-  background: rgba(255,255,255,.03);
-}
-.icon-btn:hover .social-icon{
-  opacity:1;
-  filter: invert(1) drop-shadow(0 0 6px rgba(154,166,255,.35));
-}
-/* === Markenfarben beim Hover-Effekt === */
-
-.icon-btn[aria-label="YouTube"]:hover {
-  background: #ff000030; /* Rot, leicht transparent */
+.icon-btn img,
+.icon-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--fg);
+  transition: all 0.3s ease;
 }
 
-.icon-btn[aria-label="Spotify"]:hover {
-  background: #1DB95430; /* Grün */
+.icon-btn:hover img,
+.icon-btn:hover svg {
+  fill: #fff;
+  filter: drop-shadow(0 0 6px rgba(154, 166, 255, 0.6));
 }
 
-.icon-btn[aria-label="Instagram"]:hover {
-  background: #E4405F30; /* Pink-Rot */
+/* deaktivierte Icons (z. B. zukünftige Plattformen) */
+.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
-.icon-btn[aria-label="TikTok"]:hover {
-  background: #01010130; /* Schwarz/Grau */
+.is-disabled:hover {
+  background: var(--panel);
+  transform: none;
 }
 
-.icon-btn[aria-label="SoundCloud"]:hover {
-  background: #FF550030; /* Orange */
+/* Mobile */
+@media (max-width: 600px) {
+  .icon-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .icon-btn img,
+  .icon-btn svg {
+    width: 22px;
+    height: 22px;
+  }
 }
 
-.icon-btn[aria-label="Bandcamp"]:hover {
-  background: #629AA930; /* Türkisblau */
-}
-
-.icon-btn[aria-label="Facebook"]:hover {
-  background: #1877F230; /* Blau */
-}
-
-@media (max-width: 600px){
-  .icon-btn{ width:48px; height:48px; }
-  .social-icon{ width:32px; height:32px; }
-}
 
 /* Per-Icon Feintuning ---------------------------------- */
 
