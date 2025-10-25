@@ -233,7 +233,8 @@ box-shadow:
   align-items: center;
   background: var(--panel);
   border: 1px solid rgba(255,255,255,.06);
-  box-shadow: 0 0 10px rgba(154,166,255,.18);
+  box-shadow: 0 0 14px rgba(154,166,255,.28);
+
   transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
 }
 
@@ -248,13 +249,18 @@ box-shadow:
   width: 26px;
   height: 26px;
   transition: filter .3s ease, opacity .3s ease;
+  /* Icons standardmäßig hell anzeigen */
+  filter: brightness(0) invert(1) opacity(.88);
 }
 
-.icon-btn:hover img {
-  filter: brightness(0) invert(1);
+/* Beim Hover noch etwas heller + stärkerer Kontrast */
+.icon-btn:hover img,
+.icon-btn:hover svg {
+  filter: brightness(1.1) invert(0) brightness(0) invert(1) opacity(1);
 }
 
-.icon-btn svg { fill: var(--fg); }
+/* SVG-Fallback für Fälle ohne Filter */
+.icon-btn svg { fill: #fff; }
 .icon-btn:hover svg { fill: #fff; }
 
 .is-disabled {
