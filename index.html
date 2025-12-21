@@ -40,7 +40,13 @@
   margin: 60px auto;   /* vorher 40px */
   padding: 36px;       /* vorher 24px */
 }
-header{display:flex;gap:16px;align-items:center}
+header{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  position:relative;
+}
+
 
 img.logo{
   width: 64px;              /* klein wie früher */
@@ -70,27 +76,26 @@ img.logo{
     footer{margin-top:24px;color:var(--muted);font-size:.95rem}
     @media (max-width:560px){.grid{grid-template-columns:1fr}.wrap{padding:16px;margin:18px}}
     /* 🎵 Social-Media Icon-Buttons */
-.icon-grid {
+.icon-grid{
   display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
   justify-content: center;
   align-items: center;
-  padding: 18px 0;
+  gap: 22px;
+  margin-top: 18px;
 }
 
-.icon-btn {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--panel);
-  box-shadow: 0 0 10px rgba(154, 166, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.25s ease;
+.icon-btn{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--panel);
+  box-shadow:0 0 10px rgba(154,166,255,.25);
+  transition:transform .15s ease, box-shadow .15s ease;
 }
+
 
 .icon-btn:hover {
   background: var(--accent);
