@@ -179,19 +179,22 @@ url('banner.jpg') 45% center / cover no-repeat;
 }
 .hero .icon-grid{
   position: absolute;
-  bottom: 6vh;                 /* Höhe unter dem Klavier */
-  left: 6%;                    /* stark nach links */
-  width: min(760px, 60vw);     /* Gesamtbreite der Icon-Leiste */
+  bottom: 6vh;              /* Höhe unter dem Klavier */
+  left: 6%;                 /* YouTube links fest unter dem Podest */
+  right: 14%;               /* Facebook rechts bis ans Cello */
+  
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* verteilt automatisch ALLE Icons */
   align-items: center;
+
   z-index: 3;
 
-  /* alte Logik explizit neutralisieren */
-  right: unset;
+  /* alte Logik neutralisieren */
+  width: auto;
   transform: none;
   gap: 0;
 }
+
 
 
   font-size: clamp(26px, 4vw, 42px);
