@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Melodorian – Bio / About / O meni</title>
+  <title>Melodorian – Bio / About /title>
 
   <meta name="description" content="Melodorian – melancholic instrumental music blending neoclassical, ambient and cinematic piano sound. Discover Jadran Salaovic, composer from Croatia living in Germany." />
   <meta name="keywords" content="Melodorian, Jadran Salaovic, melancholic piano, neoclassical, ambient, cinematic piano, composer, Croatia, Germany, emotional music, relaxing piano" />
@@ -35,7 +35,7 @@
     <div class="lang">
       <button onclick="setLang('en')">🇬🇧 EN</button> |
       <button onclick="setLang('de')">🇩🇪 DE</button> |
-      <button onclick="setLang('hr')">🇭🇷 HR</button>
+      
     </div>
 
     <!-- EN -->
@@ -62,17 +62,7 @@
       <p>Meine Releases gibt es auf <strong>Spotify</strong>, <strong>YouTube</strong>, <strong>Apple Music</strong> und <strong>SoundCloud</strong>. Danke fürs Zuhören. 🌙</p>
     </div>
 
-    <!-- HR -->
-    <div id="lang-hr" style="display:none;">
-      <h1>O Melodorianu</h1>
-      <p>Zovem se <strong>Jadran Salaovic</strong>, poznat kao <strong>Melodorian</strong>. Imam 53 godine; rođen u Hrvatskoj, živim u Njemačkoj od 1992. Glazba mi spaja <em>neoklasične</em>, <em>ambijentalne</em> i filmske elemente – emotivna i nostalgična.</p>
-      <p>Klavir sam počeo kasno, nakon godina gitare. Biblioteke poput <strong>Noire</strong>, <strong>The Grandeur</strong>, <strong>Una Corda</strong> i <strong>Spitfire Felt Piano</strong> pomogle su mi uhvatiti osjećaje koje riječi ne mogu.</p>
-      <p>Skladam samo s virtualnim instrumentima. Ne nastupam uživo – skladbe <em>gradim</em> u studiju, sloj po sloj. Moja je glazba stvorena za streaming.</p>
-      <p>Utjecaji: <strong>Ólafur Arnalds</strong>, <strong>Max Richter</strong>, <strong>Nils Frahm</strong>; priroda, kiša, tišina i sjećanja.</p>
-      <p>Klavir, violončelo, nježne gitare i padovi, te zvukovi prirode – glazba za mir i koncentraciju.</p>
-      <p><strong>„Ne sviram svoje skladbe – ja ih gradim.“</strong> Improviziram, uređujem i slažem slojeve dok se ne rodi priča.</p>
-      <p>Moje izdanja su na <strong>Spotifyju</strong>, <strong>YouTubeu</strong>, <strong>Apple Musicu</strong> i <strong>SoundCloudu</strong>. Hvala na slušanju. 🌙</p>
-    </div>
+    
 
     <div class="back">
       <a class="btn" href="index.html">← Back to Home</a>
@@ -81,7 +71,7 @@
 
   <script>
     function setLang(lang){
-      ['en','de','hr'].forEach(c=>{
+      ['en','de'].forEach(c=>{
         const el=document.getElementById('lang-'+c);
         if(el) el.style.display = (c===lang)?'block':'none';
       });
